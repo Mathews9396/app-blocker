@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<hmtl>
+
+    <head>
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <h1 class="schedules">Schedules</h1>
+            <div class="addSchedule">
+                <div class="addScheduleContainer">
+                    <button class="addScheduleButton">
+                        +
+                    </button>
+                    <span class="addScheduleTitle">Add a Schedule</span>
+<div class=scheduleDetails>
+        <div class="weekDays-selector">
+            <input type="checkbox" id="weekday-mon" class="weekday" />
+            <label for="weekday-mon">Mon</label>
+            <input type="checkbox" id="weekday-tue" class="weekday" />
+            <label for="weekday-tue">Tue</label>
+            <input type="checkbox" id="weekday-wed" class="weekday" />
+            <label for="weekday-wed">Wed</label>
+            <input type="checkbox" id="weekday-thu" class="weekday" />
+            <label for="weekday-thu">Thur</label>
+            <input type="checkbox" id="weekday-fri" class="weekday" />
+            <label for="weekday-fri">Fri</label>
+            <input type="checkbox" id="weekday-sat" class="weekday" />
+            <label for="weekday-sat">Sat</label>
+            <input type="checkbox" id="weekday-sun" class="weekday" />
+            <label for="weekday-sun">Sun</label>
+          </div>
+
+                    <div class="inputTime">
+                    <div class="startTime">
+                        <label for="startTimeLabel">Choose a start time for this schedule</label>
+                        <input type="time" id="appt-start" name="appt" min="00:00" max="24:00" required>
+                    </div>
+                    <div class="endTime">
+                        <label for="endTimeLabel">Choose a end time for this schedule</label>
+                        <input type="time" id="appt-end" name="appt" min="00:00" max="24:00" required>
+                    </div>
+                    <button class="submitInputTime">Submit</button>
+                </div>
+            </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+</hmtl>

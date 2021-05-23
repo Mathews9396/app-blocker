@@ -1,0 +1,77 @@
+html {
+    font-size: 62.5%;
+    /* 16px*62.5 = 10px = 1rem */
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.6rem;
+    /*16px*/
+    height: 100vh;
+    margin: 0;
+    background-color: #ecf0f1;
+    color: #3742fa;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.schedules {
+    font-size: x-large;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.addSchedule {
+    flex-grow: 1;
+}
+.addScheduleContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.addScheduleButton{
+    margin: 4rem;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.addScheduleTitle {
+    font-size: 2rem;
+    color: #3742fa;
+}
+
+.weekDays-selector input {
+    display: none!important;
+  }
+  
+  .weekDays-selector input[type=checkbox] + label {
+    display: inline-block;
+    border-radius: 6px;
+    background: #dddddd;
+    height: 40px;
+    width: 30px;
+    margin-right: 3px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .weekDays-selector input[type=checkbox]:checked + label {
+    background: #2AD705;
+    color: #ffffff;
+  }
