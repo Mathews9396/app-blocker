@@ -13,7 +13,4 @@ Router.put("/start-app",appController.startAPP)
 Router.put("/stop-app",appController.stopAPP)
 
 
-
-
-
 module.exports = Router;
